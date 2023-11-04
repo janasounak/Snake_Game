@@ -116,11 +116,7 @@ def main_game():
             if event.type == pg.JOYBUTTONDOWN and event.button == 4 and (move_direction != 'left') and (0 <= snake_y <= (SCREENHEIGHT - snake_size)):
                 move_direction ='right'
 
-        if move_direction == 'up':
-            snake_head = snake_head1
-            starting_head = starting_head1
-            snake_x += 0
-            snake_y -= snake_vel
+        
         if move_direction == 'down':
             snake_head = snake_head2
             starting_head = starting_head2
