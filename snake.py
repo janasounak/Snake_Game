@@ -5,7 +5,6 @@ from time import sleep
 
 pg.init() 
 pg.font.init()
-
 SCREENWIDTH = 300
 SCREENHEIGHT = 500
 
@@ -113,7 +112,7 @@ def main_game():
                 move_direction ='down'
             if event.type == pg.JOYBUTTONDOWN and event.button == 3 and (move_direction != 'right') and (0 <= snake_y <= (SCREENHEIGHT - snake_size)):
                 move_direction ='left'
-            if event.type == pg.JOYBUTTONDOWN and event.button == 4 and (move_direction != 'left') and (0 <= snake_y <= (SCREENHEIGHT - snake_size)):
+             event.type == pg.JOYBUTTONDOWN and event.button == 4 and (move_direction != 'left') and (0 <= snake_y <= (SCREENHEIGHT - snake_size)):
                 move_direction ='right'
 
         if move_direction == 'up':
